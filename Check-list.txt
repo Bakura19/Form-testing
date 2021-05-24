@@ -1,0 +1,126 @@
+CHECKLIST
+---///Name field///---
+
+-----Positive testing-----
+
+1. Enter the name with latin letters
+2. Enter the name with numbers
+3. Enter the name with latin letters and numbers
+4. Enter the name with underscores
+5. Enter the name with hyphen
+6. Enter the name with space
+7. Enter the name with a space in the middle of the text
+8. Enter the name with a space at the end of the text
+9. Enter the name using 2 signs
+10. Enter the name using 100 signs
+11. Enter the name using 256 signs
+12. Enter the name using only uppercase letters
+13. Enter the name using only lowercase letters
+14. Enter the name using hotkeys Ctrl+C and Ctrl+V
+
+-----Negative testing-----
+
+15. Leave the name field blank
+16. Enter the name containing 1 letter 
+17. Enter the name containing 1 digit
+18. Enter the name containing 257 letters
+19. Enter the name containing 257 digits
+20. Enter the name, the first character must be a number
+21. Enter the name, the first character must be a undercorses/dash/space
+22. Enter the first character a space
+23. Enter the first character *
+24. Enter the name with only spaces
+25. Enter the name with only *
+26. Enter the name with only numbers
+27. Enter the name using the cyrillic
+28. Enter the name using skript
+29. Enter the name using bold
+
+*********************************
+
+---///SURNAME FIELD///---
+
+-----Positive testing-----
+
+30. Enter the surname with latin letters
+31. Enter the surname with numbers
+32. Enter the surname with latin letters and numbers
+33. Enter the surname with underscores
+34. Enter the surname with hyphen
+35. Enter the surname with space
+36. Enter the surname with a space in the middle of the text
+37. Enter the surname with a space at the end of the text
+38. Enter the surname using 2 signs
+39. Enter the surname using 100 signs
+40. Enter the surname using 256 signs
+41. Enter the surname using only uppercase letters
+42. Enter the surname using only lowercase letters
+43. Enter the surname using hotkeys Ctrl+C and Ctrl+V
+
+-----Negative testing-----
+
+44. Leave the surname field blank
+45. Enter the surname containing 1 letter 
+46. Enter the surname containing 1 digit
+47. Enter the surname containing 257 letters
+48. Enter the surname containing 257 digits
+49. Enter the surname, the first character must be a number
+50. Enter the surname, the first character must be a undercorses/dash/space
+51. Enter the first character a space
+52. Enter the first character *
+53. Enter the surname with only spaces
+54. Enter the surname with only *
+55. Enter the surname with only numbers
+56. Enter the surname using the cyrillic
+57. Enter the surname using skript
+58. Enter the surname using bold
+
+*****************************************
+
+---//EMAIL FIELD//---
+
+-----Positive testing-----
+
+59. Enter email in lowercase
+60. Enter email in uppercase
+61. Enter email with numbers in the username
+62. Enter email with numbers in the domain part
+63. Enter email with a hyphen in the username
+64. Enter email with a hyphen in the domain part
+65. Enter email with an underscore in the username
+66. Enter email with an underscore in the domain part
+67. Enter email with dots in the username
+68. Enter email with multiple dots in the domain part
+
+-----Negative testing-----
+
+69. Leave the email field blank
+70. Enter email without dots in the domain part
+71. Enter email without @
+72. Enter email with two signs @
+73. Enter email with spaces in the username
+74. Enter email with spaces in the domain part 
+75. Enter email without the domain part
+
+*************************************************
+---//PASSWORD FIELD//---
+
+-----Positive testing-----
+
+76. Enter the password using latin letters (in uppercase and lowercase) and digits
+77. Enter the password containing 5 characters
+78. Enter the password containing 10 characters
+79. Enter the password containing 16 characters
+80. Enter the password containing using hotkeys Cnrl+C and Ctrl+V
+
+-----Negative teting-----
+
+81. Leave the pasword field blank  
+82. Enter the password containing 4 characters
+83. Enter the password containing 17 characters
+84. Enter the password using special character space
+85. Enter the password using special character hyphen
+86. Enter the password using special character underscores
+87. Enter the password using only letters in lowercase
+88. Enter the password using only letters in uppercase
+89. Enter the password using only numbers
