@@ -1,0 +1,132 @@
+ID: 101
+
+Summary:  
+Sign up form: user was signed in successfully entering incorrect email address without "@" in the email field
+
+Priority: Critical
+
+Severity: High
+
+Description
+
+Precondition:
+1. Open http://itcareer.pythonanywhere.com/
+2. Sign up form appears with following fields: Name; Surname; Email; Password
+
+STR:
+1. Enter in the name field "Ivan"
+2. Enter in the surname field "Ivanov"
+3. Enter in the email field "ivanov19mail.ru"
+4. Enter in the password field "Ivanov91"
+5. Click on Submit
+
+Expected result:
+1. Name field displays "Ivan"
+2. Surname field displays "Ivanov"
+3. Email field displays "ivanov19mail.ru"
+4. Password field displays password with dots
+5. Validation message about incorrect email adress
+
+Actual result: 
+1. Name field displays "Ivan"
+2. Surname field displays "Ivanov"
+3. Email field displays "ivanov19mail.ru"
+4. Password field displays password with dots
+5. User was signed in successfully
+
+Reporter: Alexander Bakuryn
+
+Assignee: Vadzim Ksendzov
+
+Environment: 
+Windows 10
+Yandex 25.5.1
+----------------------------------
+ID: 102
+
+Summary:  
+Sign up form: user was signed in successfully entering minimum number of character -1 in the password field
+
+Priority: Critical
+
+Severity: High
+
+Description
+
+Precondition:
+1. Open http://itcareer.pythonanywhere.com/
+2. Sign up form appears with following fields: Name; Surname; Email; Password
+
+STR:
+1. Enter in the name field "Ivan"
+2. Enter in the surname field "Ivanov"
+3. Enter in the email field "ivanov19@mail.ru"
+4. Enter in the password field "Iva9"
+5. Click on Submit
+
+Expected result:
+1. Name field displays "Ivan"
+2. Surname field displays "Ivanov"
+3. Email field displays "ivanov19@mail.ru"
+4. Password field displays password with dots
+5. Validation message about minimum number of charecter in the password field
+
+Actual result: 
+1. Name field displays "Ivan"
+2. Surname field displays "Ivanov"
+3. Email field displays "ivanov19@mail.ru"
+4. Password field displays password with dots
+5. User was signed in successfully
+
+Reporter: Alexander Bakuryn
+
+Assignee: Vadzim Ksendzov
+
+Environment: 
+Windows 10
+Yandex 25.5.1
+--------------------------------------------------
+
+ID: 103
+
+Summary:  
+Sign up form: user wasn't signed in successfully entering minimum number of character in the name field
+
+Priority: Critical
+
+Severity: High
+
+Description
+
+Precondition:
+1. Open http://itcareer.pythonanywhere.com/
+2. Sign up form appears with following fields: Name; Surname; Email; Password
+
+STR:
+1. Enter in the name field "Pt"
+2. Enter in the surname field "Petrov"
+3. Enter in the email field "petrov19@mail.ru"
+4. Enter in the password field "Petrov91"
+5. Click on Submit
+
+Expected result:
+1. Name field displays "Pt"
+2. Surname field displays "Petrov"
+3. Email field displays "petrov19@mail.ru"
+4. Password field displays password with dots
+5. User was signed in successfully
+
+Actual result: 
+1. Name field displays "Ivan"
+2. Surname field displays "Ivanov"
+3. Email field displays "ivanov19@mail.ru"
+4. Password field displays password with dots
+5. Message: all fields are required
+
+Reporter: Alexander Bakuryn
+
+Assignee: Vadzim Ksendzov
+
+Environment: 
+Windows 10
+Yandex 25.5.1
