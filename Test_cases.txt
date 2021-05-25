@@ -1,0 +1,195 @@
+TEST CASES
+
+ID: 100
+
+Summary: user sign up with valid data
+
+Precondition: 
+1. open http://itcareer.pythonanywhere.com/
+2. sign up form appears with following fields: Name; Surname; Email; Password
+
+STR:
+1. Enter in the name field "Ivan"
+2. Enter in the surname field "Ivanov"
+3. Enter in the email field "ivanov19@mail.ru"
+4. Enter in the password field "Ivanov91"
+5. Click on Submit
+
+Expected result:
+1. Name field displays "Ivan"
+2. Surname field displays "Ivanov"
+3. Email field displays "ivanov19@mail.ru"
+4. Password field displays password with dots
+5. User was signed in successfully
+
+Result:
+PASS
+
+
+
+ID: 107
+
+Summary: user sign up with valid data using minimum numbers of characters in name field and surname field
+
+Precondition: 
+1. open http://itcareer.pythonanywhere.com/
+2. sign up form appears with following fields: Name; Surname; Email; Password
+
+STR:
+1. Enter in the name field "Pt"
+2. Enter in the surname field "Pt"
+3. Enter in the email field "petrov19@mail.ru"
+4. Enter in the password field "Petrov91"
+5. Click on Submit
+
+Expected result:
+1. Name field displays "Pt"
+2. Surname field displays "Pt"
+3. Email field displays "petrov19@mail.ru"
+4. Password field displays password with dots
+5. User was signed in successfully
+
+Result:
+FAIL
+
+
+ID: 109
+
+Summary: user sign up with valid data using latin letters, numbers, following special characters "-", "_", "space"
+
+Precondition: 
+1. open http://itcareer.pythonanywhere.com/
+2. sign up form appears with following fields: Name; Surname; Email; Password
+
+STR:
+1. Enter in the name field "Ivan_19"
+2. Enter in the surname field "Ivanov-9 1"
+3. Enter in the email field "ivanov19@mail.com"
+4. Enter in the password field "Ivanov91"
+5. Click on Submit
+
+Expected result:
+1. Name field displays "Ivan_19"
+2. Surname field displays "Ivanov-9 1"
+3. Email field displays "ivanov19@mail.com"
+4. Password field displays password with dots
+5. User was signed in successfully
+
+Result:
+PASS
+
+ID: 178
+
+Summary: user sign up with valid data using maximum number of characters in the password field 
+
+Precondition: 
+1. open http://itcareer.pythonanywhere.com/
+2. sign up form appears with following fields: Name; Surname; Email; Password
+
+STR:
+1. Enter in the name field "Ivan"
+2. Enter in the surname field "Ivanov"
+3. Enter in the email field "ivanov19@mail.ru"
+4. Enter in the password field "Ivanov91Ivanov91"
+5. Click on Submit
+
+Expected result:
+1. Name field displays "Ivan"
+2. Surname field displays "Ivanov"
+3. Email field displays "ivanov19@mail.ru"
+4. Password field displays password with dots
+5. User was signed in successfully
+
+Result:
+PASS 
+
+ID: 121
+
+Summary: user sign up with invalid data using maximum number of characters +1 in the name field
+
+Precondition: 
+1. open http://itcareer.pythonanywhere.com/
+2. sign up form appears with following fields: Name; Surname; Email; Password
+
+STR:
+1. Enter in the name field "Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_"
+2. Enter in the surname field "Ivanov"
+3. Enter in the email field "ivanov19@mail.com"
+4. Enter in the password field "Ivanov91"
+5. Click on Submit
+
+Expected result:
+1. Name field displays "Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_19Ivan_"
+2. Surname field displays "Ivanov"
+3. Email field displays "ivanov19@mail.com"
+4. Password field displays password with dots
+5. Validation message about exceeding the maximum number of characters in the name field
+Result:
+FAIL
+
+ID: 119
+
+Summary: user sign up leaving fields blank
+
+Precondition: 
+1. open http://itcareer.pythonanywhere.com/
+2. sign up form appears with following fields: Name; Surname; Email; Password
+
+STR:
+1. Click on Submit
+
+Expected result:
+1. Message: all fields are required
+
+Result:
+PASS
+
+ID: 183
+
+Summary: user sign up with valid data using minimum number of characters -1 in the password field 
+
+Precondition: 
+1. open http://itcareer.pythonanywhere.com/
+2. sign up form appears with following fields: Name; Surname; Email; Password
+
+STR:
+1. Enter in the name field "Ivan"
+2. Enter in the surname field "Ivanov"
+3. Enter in the email field "ivanov19@mail.ru"
+4. Enter in the password field "Iva9"
+5. Click on Submit
+
+Expected result:
+1. Name field displays "Ivan"
+2. Surname field displays "Ivanov"
+3. Email field displays "ivanov19@mail.ru"
+4. Password field displays password with dots
+5. Validation message about minimum number of charecter in the password field
+
+Result:
+FAIL
+
+ID: 160
+
+Summary: user sign up with invalid data in email field without sign "@"
+
+Precondition: 
+1. open http://itcareer.pythonanywhere.com/
+2. sign up form appears with following fields: Name; Surname; Email; Password
+
+STR:
+1. Enter in the name field "Ivan"
+2. Enter in the surname field "Ivanov"
+3. Enter in the email field "ivanov19mail.ru"
+4. Enter in the password field "Ivanov91"
+5. Click on Submit
+
+Expected result:
+1. Name field displays "Ivan"
+2. Surname field displays "Ivanov"
+3. Email field displays "ivanov19mail.ru"
+4. Password field displays password with dots
+5. Validation message about incorrect email adress
+
+Result:
+FAIL
