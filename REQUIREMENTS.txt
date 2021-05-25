@@ -1,0 +1,43 @@
+REQUIREMENTS.
+
+required fields:
+- name
+- email
+- password
+---------------------
+NAME FIELD
+the name field can contain:
+- latin letters
+- numbers
+- special characters ("-", "_", "space")
+minimum number of characters: 2
+maximum number of characters: 256
+in the name field, the first character must be a letter
+the last character doesn't matter
+---------------------
+SURNAME FIELD
+the name field can contain:
+- latin letters
+- numbers
+- special characters ("-", "_", "space")
+minimum number of characters: 2
+maximum number of characters: 256
+in the name field, the first character must be a letter
+the last character doesn't matter
+---------------------
+EMAIL FIELD
+the email field can contain:
+- latin letters
+- numbers
+- signs: ! # $ % & ‘ * + — / =? ^ _ ` { | } ~ 
+a sign dot ".", except for the first and last sign, which can't be repeated
+----------------------
+PASSWORD FIELD
+the password field can contain:
+- minimum number of characters: 5
+- maximum number of characters: 16
+- latin letters
+- numbers
+the password must contain: at least one uppercase letter, at least one lowercase letter, at least one digit
+the password field completely excludes special characters
+there must be a password confirmation field
